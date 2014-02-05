@@ -1,0 +1,49 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<definition name="main" template="/views/templates/main.jsp">
+		<put-attribute name="titulo" value="Página Gamer"/>
+		<put-attribute name="cabecalho" value="/views/templates/cabecalho.jsp"/>
+		<put-attribute name="links" value="/views/templates/links.jsp"/>
+		<put-attribute name="login" value="/views/templates/login.jsp"/>
+		<put-attribute name="rodape" value="/views/templates/rodape.jsp"/>
+	</definition>
+
+    <definition name="index"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/index.jsp"/>
+    </definition>
+    
+    <definition name="registroFabricante"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/cad_fabricante.jsp"/>
+    </definition>
+    
+    <definition name="registroConsole"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/cad_console.jsp"/>
+    </definition>
+    
+    <definition name="registroJogo"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/cad_jogo.jsp"/>
+    </definition>
+    
+    <definition name="registroPessoa"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/cad_usu.jsp"/>
+    </definition>
+    
+      <definition name="anexarJogosConsoles"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/membro/anx_cons_jog.jsp"/>
+    </definition>
+    
+     <definition name="lista"  extends="main" >
+    	<put-attribute name="conteudo" value="/views/list_usu.jsp"/>
+    </definition>
+    
+    
+    <definition name="show" extends="main">
+    	<put-attribute name="conteudo" value="/views/show.jsp"/>
+    	
+    </definition>
+    
+
+</tiles-definitions>
